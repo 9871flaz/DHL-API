@@ -59,12 +59,12 @@ class Place extends Base
             'maxLength' => '35',
         ), 
         'AddressLine' => array(
-            'type' => 'string',
+            'type' => 'AddressLine',
             'required' => true,
             'subobject' => false,
             'comment' => 'Address Line',
-            'multivalues' => true,
-        ),
+            'maxLength' => '35',
+        ), 
         'City' => array(
             'type' => 'City',
             'required' => false,
